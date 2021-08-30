@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainPage {
@@ -21,8 +22,16 @@ public class MainPage {
 			case 4:
 				break;
 			case 5:
-				break;
-			}
+					System.out.println("삭제하실 회원이름을 입력해주세요.");
+					String delName = scan.next();
+					while(true) {
+						ArrayList arrayList = new ArrayList();
+						arrayList.remove(delName);
+						System.out.println();
+					
+					}
+				
+			}break;
 		}
 	}
 }
