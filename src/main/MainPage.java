@@ -13,13 +13,8 @@ public class MainPage {
 			System.out.println("1.생성 2.전체보기 3.하나만 보기 4.수정 5.삭제");
 			num = scan.nextInt();
 			switch (num) {
-			case 1: while(true) {
-				System.out.println("이름입력");
-				ArrayList arr = new ArrayList();
-				name = scan.next();
-				System.out.println(name+"님의 정보가 입력되었습니다.");
-			break;
-			}
+			case 1: 
+			
 			case 2:
 				break;
 			case 3:
