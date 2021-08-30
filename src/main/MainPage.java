@@ -26,6 +26,20 @@ public class MainPage {
 				}
 				break;
 			case 3:
+				System.out.println("=== 검색 할 학번을 입력해주세요 ===");
+				stNum = scan.next();
+				
+				for (int i = 0; i < al.size(); i++) {
+					STU stu02 = al.get(i);
+					if (stNum.equals(stu02.getStuNo())) {
+						System.out.println("학생 이름 : " + al.get(i).getStuNo());
+						System.out.println("학생 학번 : " + al.get(i).getName());
+						System.out.println("학생 번호 : " + al.get(i).getPhoneNo());
+					}
+					if (stNum.contains(stNum) != true) {
+						System.out.println("존재하지 않는 학번입니다.");
+					}
+				}
 				
 				break;
 			case 4:
