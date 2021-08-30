@@ -62,8 +62,8 @@ public class Student {
 						System.out.println("이름 : " + list.get(i).getStuNo());
 						System.out.println("전화번호 : " + list.get(i).getPhoneNo());
 					}
-					else if (stu02.getStuNo() == stNum) {
-						System.out.println("그런 분은 안계십니다.");
+					if (stNum.contains(stNum) != true) {
+						System.out.println("존재하지 않는 학번입니다.");
 					}
 				}
 				
