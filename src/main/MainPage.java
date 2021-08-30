@@ -2,6 +2,8 @@ package main;
 
 import java.util.Scanner;
 
+import ys.*;
+
 public class MainPage {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -17,6 +19,9 @@ public class MainPage {
 			case 2:
 				break;
 			case 3:
+					Student ys = new Student();
+					ys.print();
+					
 				break;
 			case 4:
 				break;
