@@ -1,7 +1,15 @@
 package main;
 
 public class DelN {
-	String name;
+	private String name;
+	private int  PhoneNo;
+	public int getPhoneNo() {
+		return PhoneNo;
+	}
+
+	public void setPhoneNo(int phoneNo) {
+		PhoneNo = phoneNo;
+	}
 
 	public String getName() {
 		return name;
