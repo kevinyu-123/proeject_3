@@ -67,35 +67,39 @@ public class MainPage {
 
 				break;
 			case 4:
-				System.out.println("수정 학번 입력");
+				System.out.println("수정할 학번 입력");
 				stuNo = scan.next();
 				
 				for (int i = 0; i < al.size(); i++) {
 					STU stu02 = al.get(i);
 					if (stuNo.equals(stu02.getStuNo())) {
+						
+						System.out.println("-------저장된 정보----------");
 						System.out.println("학생 이름 : " + al.get(i).getStuNo());
 						System.out.println("학생 학번 : " + al.get(i).getName());
 						System.out.println("학생 번호 : " + al.get(i).getPhoneNo());
+						System.out.println("---------------------------------");
+					
+						al.remove(i);
+						STU st = new STU();
+						System.out.println("수정할 학번 입력");
+						st.setStuNo( scan.next() );
+						
+							System.out.println("수정할 이름 입력");
+							st.setName( scan.next() );
+							
+							System.out.println("수정할 전화버노 입력");
+							st.setPhoneNo(scan.nextInt());
+							
+							System.out.println("수정 되었습니다");
+						al.add(st); 
+						
 					}
+					
 					if (stuNo.contains(stuNo) != true) {
 						System.out.println("존재하지 않는 학번입니다.");
 					}
 				}
-				
-				STU st = new STU();
-				System.out.println("수정할 학번 입력");
-				st.setStuNo( scan.next() );
-				
-					System.out.println("수정할 이름 입력");
-					st.setName( scan.next() );
-					
-					System.out.println("수정할 전화버노 입력");
-					st.setPhoneNo(scan.nextInt());
-					
-					System.out.println("수정 되었습니다");
-					
-					al.add(st);
-				
 				
 
 				break;
