@@ -1,15 +1,16 @@
 package main;
 
 public class STU {
-	private String name;
-	private String stuNo;
-	private int PhoneNo;
+	private String name; //이 름
+	private String stuNo; // 학번
+	private int phoneNo;//폰버노
+	
 	
 	public int getPhoneNo() {
-		return PhoneNo;
+		return phoneNo;
 	}
 	public void setPhoneNo(int phoneNo) {
-		PhoneNo = phoneNo;
+		this.phoneNo=phoneNo;
 	}
 	public String getName() {
 		return name;
@@ -23,5 +24,6 @@ public class STU {
 	public void setStuNo(String stuNo) {
 		this.stuNo = stuNo;
 	}
+	
 	
 }
