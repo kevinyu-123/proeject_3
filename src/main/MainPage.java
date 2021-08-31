@@ -35,10 +35,7 @@ public class MainPage {
 				s.setPhoneNo(phoneNo);
 				
 				al.add(s);
-				
-				
-				
-				
+			
 				break;
 			case 2:
 				System.out.println("----학생 전체 보기----");
@@ -48,7 +45,7 @@ public class MainPage {
 					System.out.println("학생 번호: "+al.get(i).getPhoneNo());
 					System.out.println("---------------");}
 				break;
-				
+			
 			case 3:
 				System.out.println("=== 검색 할 학번을 입력해주세요 ===");
 				stuNo = scan.next();
